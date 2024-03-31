@@ -10,7 +10,9 @@ function cycle($arr)
     echo $arr[$count];
     $count++;
     if ($count < count($arr)) {
-        cycle($arr);
+         cycle($arr);
+    } else {
+        unset($count);
     }
 }
 
